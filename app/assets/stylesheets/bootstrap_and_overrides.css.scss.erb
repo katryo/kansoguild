@@ -1,0 +1,22 @@
+// Set the correct sprite paths
+$iconSpritePath: image-path('glyphicons-halflings.png');
+$iconWhiteSpritePath: image-path('glyphicons-halflings-white.png');
+
+$navbarBackground: #555;
+$navbarBackgroundHighlight: #888;
+$navbarText: #eee;
+$navbarLinkColor: #eee;
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import "compass/utilities";
+@import "compass/css3";
+@import "sassy-buttons";
+@import "font-awesome";
+
+body {
+padding-top: 60px;
+background-image: url(<%= asset_path("wood_pattern.png")%>);
+font-family: "ヒラギノ角ゴ Pro W3", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+}
+
