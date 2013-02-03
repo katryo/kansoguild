@@ -1,4 +1,6 @@
 Kansoguild::Application.routes.draw do
+  resources "items"
+
   get "welcome/index"
 
   # The priority is based upon order of creation:
