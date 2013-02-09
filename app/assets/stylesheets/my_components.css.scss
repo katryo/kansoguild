@@ -18,6 +18,15 @@ h1 {
 @include sassy-button("flat", 10px, 19px, #4ba3cc);
 }
 
+.flat-button-success{
+@include sassy-button("flat", 10px, 19px, #8cbe5f);
+}
+
+.flat-button-danger{
+@include sassy-button("flat", 10px, 19px, #B53a20);
+}
+
+
 .paper {
 background: white;
 min-height: 20px;
