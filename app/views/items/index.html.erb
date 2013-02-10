@@ -1,15 +1,19 @@
-<div class="main">
-<div class="container">
-<div class="row">
-<div class="span8 offset2">
-<div class="paper center">
 <div class="block">
 <h1>ステージ</h1>
-
+<% @items.each do |item| %>
+<div class="on-stage-item">
+<h4><%= item.name %></h4>
+<p>
+<%= item.description %>
+</p>
+<p>
+<%= link_to item.url, item.url %>
+</p>
+<%= link_to new_item_comment_path(item) do %>
+<div class="flat-button">
+<i class="icon-pencil"></i> 感想を書く
 </div>
-
+<% end %>
 </div>
-</div>
-</div>
-</div>
+<% end %>
 </div>

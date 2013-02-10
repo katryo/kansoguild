@@ -1,0 +1,28 @@
+  <% if @item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% @item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<%= form_for(@item) do |f| %>
+  <div class="field">
+    <%= f.label :name, "名前" %>
+    <%= f.text_area :name, rows: "1" %>
+  </div>
+  <div class="field">
+  <%= f.label :url, "作品が読めるURL" %>
+    <%= f.text_area :url, rows: "1" %>
+  </div>
+  <div class="field">
+    <%= f.label :description, "作品の説明" %>
+    <%= f.text_area :description, rows: "4" %>
+  </div>
+  <div class="actions">
+    <%= f.submit value: "送信する" %>
+  </div>
+<% end %>

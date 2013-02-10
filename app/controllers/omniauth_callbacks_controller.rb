@@ -1,3 +1,4 @@
+#coding: utf-8
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def all
     user = User.from_omniauth(request.env["omniauth.auth"])

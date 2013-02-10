@@ -1,0 +1,20 @@
+<div class="main">
+<div class="container">
+<div class="row">
+<div class="span8 offset2">
+<div class="paper center">
+<div class="block">
+<h1>構成員一覧</h1>
+<ul class="unstyled">
+<% @users.each do |user| %>
+<li>
+<%= user.username %>
+</li>
+<% end %>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

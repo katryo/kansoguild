@@ -1,0 +1,13 @@
+<div class="block">
+<h1><%= @item.name %></h1>
+<p>
+<%= link_to @item.url, @item.url %>
+</p>
+<p>
+<%= @item.description %>
+</p>
+
+<p>
+<%= link_to "編集する", edit_item_path(@item), class: "flat-button" %>
+</p>
+</div>
